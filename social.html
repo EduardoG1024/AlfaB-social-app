@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL APP</title>
+    <meta name="description" content="Social app AlfaB">
+    <meta name="keywords" content="social, app, alfab">
+    <meta name="author" content="alfab">
+    <meta property="og:image" content="https://alfab.site/img/final-logo.jpeg" />
+    <meta property="og:url" content="https://alfab.site/" />
+    <link rel="stylesheet" href="social.css">
+    <script src="social.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <img src="imgSocial/face-logo.png" 
+        alt="logo" 
+        class="logo-banner" 
+        loading="lazy"
+        decoding="async">
+    </header>
+    <form>
+        <label for="Nombre">Nombre/Usuario:</label>
+        <input type="text" id="Nombre">
+        <label for="Correo">Correo electronico:</label>
+        <input type="email" name="Correo" id="Correo" placeholder="OPCIONAL / NO REQUERIDO">
+        <!--<label for="Titulo">Titulo del mensaje:</label>
+        <input type="text" id="Titulo">-->
+        <label for="Mensaje">Contenido del mensaje:</label>
+        <input type="text" id="Mensaje">
+        <button id="btnSubmit">Publicar</button>
+    </form>
+    <div id="status-form"></div>
+    <div id="contenido-usuarios"></div>
+    <img src="imgSocial/final-logo.png" 
+    alt="final-pagina" 
+    class="img-footer" 
+    loading="lazy" 
+    decoding="async">
+</body>
+</html>
