@@ -41,12 +41,12 @@ async function mostrarMensajes() {
     .from('messages_users')
     .select('id, user_name, user_message')
     .order('id', {ascending: false})
-    .gt('id', 4)
+    //.gt('id', 4)
 
     data.forEach(contentData => {
         const contenido = document.createElement('p');
         contenido.className = 'textStyle';
-        contenido.innerHTML = `Comentario: ${contentData.user_message} <br> Usuario: ${contentData.user_name}`;
+        contenido.innerHTML = `Usuario: ${contentData.user_name} <br> ${contentData.user_message}`;
         contenidoUsuarios.appendChild(contenido);
     });
 }

@@ -15,6 +15,9 @@ h1, p, label{
     color: #bfc0d1;
     font-family: "Comic Neue", cursive;
 }
+h1{
+    color: #00df82;
+}
 #btnSubmit{
     color: #030f0f;
     font-family: "Fredoka", sans-serif;
@@ -24,6 +27,15 @@ h1, p, label{
     height: fit-content;
     cursor: pointer;
     margin: 10px 0 10px 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    background-color: #162936;
 }
 form{
     display: flex;
@@ -70,21 +82,21 @@ form{
 }
 #contenido-usuarios{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     max-width: 500px;
     width: 100%;
     height: fit-content;
     margin-top: 20px;
-    gap: 5px;
+    gap: 10px;
 }
 .textStyle{
-    width: 90%;
+    width: 100%;
     height: fit-content;
     padding: 5px;
     border-radius: 5px;
     background-color: #3b5265;
 }
 .img-footer{
-    width: 400px;
+    width: 200px;
     height: fit-content;
 }
